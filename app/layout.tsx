@@ -5,12 +5,12 @@ import "./globals.css"
 export default function SiteLayout({children}: {  children: React.ReactNode}) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col min-h-dvh">
         {/* Layout UI*/}
         {/* Place children were you want to render a page or nested layout*/}
         <header><Navbar /></header>
-        <main className='bg-bl'>{children}</main>
-        {/*<footer><Footer /></footer>*/}
+        <main className="flex-1">{children}</main>
+        <footer><Footer /></footer>
       </body>
     </html>
   )
