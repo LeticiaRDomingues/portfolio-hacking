@@ -4,12 +4,12 @@ import Navlink from "./NavLink";
 export default function Navbar() {
     return(
         <header className='bg-black'>
-            <div className='flex justify-between items-center pl-10 p-6 mx-auto'>
+            <div className='mx-auto flex items-center justify-between px-16 py-4'>
                 <div>
-                    <Link className='text-white text-2xl font-bold' href="/">LetzLab404</Link>
+                    <Link className='text-2xl font-bold tracking-tight text-white' href="/">LetzLab404</Link>
                 </div>
                 
-                <div className='pr-15'>
+                <div className='flex items-center gap-10'>
                     <Navlink href="/projects" label="Projects" />
                     <Navlink href="/challenges" label="Challenges" />
                     <Navlink href="/about" label="About" />
