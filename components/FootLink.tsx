@@ -1,10 +1,11 @@
 interface MyFootlinkProps{
     href: string;
-    label: string;
+    ariaLabel: string;
+    label: React.ReactNode;
 }
 
-export default function Footlink({ href, label}: MyFootlinkProps){
+export default function Footlink({ href, label, ariaLabel}: MyFootlinkProps){
     return(
-         <a className="p-8 pt-3 pb-3 " href={href} target="_blank">{label}</a>
+         <a className="transition duration-200 hover:scale-110 hover:text-cyan-400 " href={href} target="_blank" rel="nooperner noreferrer" aria-label={ariaLabel}>{label}</a>
     )
 }
