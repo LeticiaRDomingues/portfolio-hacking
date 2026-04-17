@@ -6,7 +6,7 @@ export default function Navbar() {
         <header className='fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10'>
             <div className='mx-auto flex items-center justify-between px-16 py-4'>
                 <div>
-                    <Link className='text-2xl font-bold tracking-tight text-white' href="/">LetzLab404</Link>
+                    <Link className='text-xl font-bold tracking-tight text-white' href="/">LetzLab404</Link>
                 </div>
 
                 <div className='flex items-center gap-10'>
