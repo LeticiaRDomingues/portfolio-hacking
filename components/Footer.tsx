@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer className='bg-zinc-950'>
             <div className='mx-auto flex items-center justify-between px-16 py-6 text-gray-400'>
-                <div className='text-sm'>© 2026 LetzLab404, Inc. All rights reserved.</div>
+                <div className='text-sm'>© 2026 LetzLab404, Inc. All rights reserved. Currently building in public.</div>
                 <div className='flex items-center gap-5 text-2xl'>
                     <Footlink href="https://www.youtube.com/@letzlab404" ariaLabel={"YouTube"} label={<SiYoutube />} />
                     <Footlink href="https://github.com/LeticiaRDomingues" ariaLabel={"GitHub"} label={<SiGithub />} />
