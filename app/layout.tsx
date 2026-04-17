@@ -2,14 +2,14 @@ import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import "./globals.css"
 
-export default function SiteLayout({children}: {  children: React.ReactNode}) {
+export default function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="flex min-h-dvh flex-col">
         {/* Layout UI*/}
         {/* Place children were you want to render a page or nested layout*/}
         <header><Navbar /></header>
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 bg-black text-white px-8">{children}</main>
         <footer><Footer /></footer>
       </body>
     </html>
