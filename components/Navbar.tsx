@@ -11,6 +11,7 @@ export default function Navbar() {
                 
                 <div className='pr-15'>
                     <Navlink href="/projects" label="Projects" />
+                    <Navlink href="/challenges" label="Challenges" />
                     <Navlink href="/about" label="About" />
                     <Navlink href="/contact" label="Contact" />
                 </div>
