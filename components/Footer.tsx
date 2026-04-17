@@ -6,7 +6,7 @@ import { ImLinkedin } from "react-icons/im";
 export default function Footer() {
     return(
        <footer className='bg-gray-900'>
-        <div className='mx-auto flex items-center justify-between px-6 py-6 text-gray-400'>
+        <div className='mx-auto flex items-center justify-between px-16 py-6 text-gray-400'>
             <div className='text-sm'>© 2026 LetzLab404, Inc. All rights reserved.</div>
             <div className='flex items-center gap-5 text-2xl'>
                 <Footlink href="https://www.youtube.com/@letzlab404" ariaLabel={"YouTube"} label={<SiYoutube />}/>
