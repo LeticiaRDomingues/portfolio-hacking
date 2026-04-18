@@ -1,3 +1,5 @@
+import AnimationCube from "@/components/home/AnimationCube"
+
 const NAV_HEIGHT = "20px";
 
 export default function HomeHero() {
@@ -8,6 +10,7 @@ export default function HomeHero() {
                 <p className="text-xl pl-3 text-zinc-400"> Ethical hacking, development and real-world problem solving.</p>
             </div>
             <div className="flex justify-center items-center">
+                <AnimationCube />
             </div>
         </section>
     )
