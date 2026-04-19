@@ -35,7 +35,13 @@ export default function AnimationCube() {
             {/* Objeto 3D */}
             <div
                 ref={ref}
-                className="relative h-110 w-130"
+                className="
+                relative
+                h-56 w-[16rem]
+                sm:h-72 sm:w-[20rem]
+                md:h-88 md:w-[24rem]
+                lg:h-130 lg:w-130
+                "
                 style={{ transformStyle: "preserve-3d" }}
             >
                 <div className={face1} style={{ transform: "translateZ(90px)" }} />
