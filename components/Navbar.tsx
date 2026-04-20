@@ -30,7 +30,7 @@ export default function Navbar() {
                     <button
                         type="button"
                         onClick={() => setOpen((prev) => !prev)}
-                        className="relative z-[110] inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg p-2 text-white transition-colors hover:bg-white/10 md:hidden"
+                        className="relative z-110 inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg p-2 text-white transition-colors hover:bg-white/10 md:hidden"
                         aria-label={open ? 'Close menu' : 'Open menu'}
                         aria-expanded={open}
                         aria-controls="mobile-menu"
@@ -43,7 +43,7 @@ export default function Navbar() {
             {/* Mobile dropdown */}
             <div
                 id="mobile-menu"
-                className={`overflow-hidden border-t border-white/10 bg-zinc-950/95 transition-all duration-300 ease-out md:hidden ${open ? 'max-h-[420px] opacity-100' : 'max-h-0 opacity-0'
+                className={`overflow-hidden border-t border-white/10 bg-zinc-950/95 transition-all duration-300 ease-out md:hidden ${open ? 'max-h-420px opacity-100' : 'max-h-0 opacity-0'
                     }`}
             >
                 <nav className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
