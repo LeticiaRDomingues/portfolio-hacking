@@ -20,7 +20,7 @@ export default function AnimationCube() {
 
     return (
         <div
-            className="flex items-center justify-center"
+            className=" pl-20 pb-20"
             style={{ perspective: "1000px" }}
         >
             <div

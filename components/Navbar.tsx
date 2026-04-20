@@ -3,7 +3,7 @@ import Navlink from "./NavLink";
 
 export default function Navbar() {
     return (
-        <header className='fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10'>
+        <header className='fixed top-0 left-0 w-full z-50 bg-zinc-950 backdrop-blur-md border-b border-white/20'>
             <div className='mx-auto flex items-center justify-between px-16 py-4'>
                 <div>
                     <Link className='text-xl font-bold tracking-tight text-white' href="/">LetzLab404</Link>
