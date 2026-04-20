@@ -41,21 +41,20 @@ export default function Navbar() {
             </div>
 
             {/* Mobile dropdown */}
-            {open && (
-                <div
-                    id="mobile-menu"
-                    className="md:hidden border-t border-white/10 bg-zinc-950/95"
-                >
-                    <nav className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
-                        <div className="flex flex-col gap-2">
-                            <Navlink href="/projects" label="Projects" />
-                            <Navlink href="/challenges" label="Challenges" />
-                            <Navlink href="/about" label="About" />
-                            <Navlink href="/contact" label="Contact" />
-                        </div>
-                    </nav>
-                </div>
-            )}
+            <div
+                id="mobile-menu"
+                className={`overflow-hidden border-t border-white/10 bg-zinc-950/95 transition-all duration-300 ease-out md:hidden ${open ? 'max-h-[420px] opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+            >
+                <nav className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+                    <div className="flex min-h-[32vh] flex-col items-center justify-center gap-7">
+                        <Navlink href="/projects" label="Projects" />
+                        <Navlink href="/challenges" label="Challenges" />
+                        <Navlink href="/about" label="About" />
+                        <Navlink href="/contact" label="Contact" />
+                    </div>
+                </nav>
+            </div>
         </header>
     )
 }
