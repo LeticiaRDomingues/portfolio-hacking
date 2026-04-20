@@ -15,7 +15,7 @@ export default function AnimationCube() {
         ref.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     });
 
-    const face1 = "absolute inset-0 border-2 border-cyan-300 bg-cyan-800/10";
+    const face1 = "absolute inset-0 border-2 border-cyan-300 bg-cyan-400/10";
     const face2 = "absolute inset-0 border-1 border-cyan-800 bg-cyan-400/15";
 
     return (
@@ -23,25 +23,9 @@ export default function AnimationCube() {
             className="flex items-center justify-center"
             style={{ perspective: "1000px" }}
         >
-            {/* Glow de fundo */}
-            <div
-                className="absolute w-105 h-105 rounded-full blur-3xl"
-                style={{
-                    background:
-                        "radial-gradient(circle, rgba(34,211,238,.16) 45%, rgba(34,211,238,.08) 105%, transparent 70%)",
-                }}
-            />
-
-            {/* Objeto 3D */}
             <div
                 ref={ref}
-                className="
-                relative
-                h-56 w-[16rem]
-                sm:h-72 sm:w-[20rem]
-                md:h-88 md:w-[24rem]
-                lg:h-130 lg:w-130
-                "
+                className="relative h-100 w-100"
                 style={{ transformStyle: "preserve-3d" }}
             >
                 <div className={face1} style={{ transform: "translateZ(90px)" }} />
